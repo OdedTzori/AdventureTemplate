@@ -59,6 +59,26 @@ public class Game {
      */
     public void handleCommand(String cmd) {
         if (cmd.contains("look")) display("DON'T TOUCH THE WUMPUS!!");
+        else if (cmd.contains("LEFT")){
+        	player.move(Location.WEST);
+        	display ("WEST");
+        }
+        else if (cmd.contains("RIGHT")){
+        	player.move(Location.EAST);
+        	display("EAST");
+        }
+        else if (cmd.contains("UP")){
+        	player.move(Location.NORTH);
+        	display("NORTH");
+        }
+        else if (cmd.contains("DOWN")){
+        	player.move(Location.SOUTH);
+        	display("SOUTH");
+        }
+        else if (cmd.contains("escape")){
+        	player.randomMove();
+        	display("New Location");
+        }
         else
             display("I don't know what you mean...");
     }
