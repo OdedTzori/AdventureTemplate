@@ -186,6 +186,13 @@ public class GUI extends javax.swing.JFrame implements KeyListener {
         if (e.getKeyCode() == e.VK_DOWN) game.handleEvent(Game.KeyAction.DOWN);
         if (e.getKeyCode() == e.VK_RIGHT) game.handleEvent(Game.KeyAction.RIGHT);
         if (e.getKeyCode() == e.VK_LEFT) game.handleEvent(Game.KeyAction.LEFT);
+        if (e.getKeyChar() == 'a') game.handleEvent(Game.KeyAction.LEFT);
+        if (e.getKeyChar() == 's') game.handleEvent(Game.KeyAction.DOWN);
+        if (e.getKeyChar() == 'w') game.handleEvent(Game.KeyAction.UP);
+        if (e.getKeyChar() == 'd') game.handleEvent(Game.KeyAction.RIGHT);
+        if (e.getKeyChar() == ' ') game.handleEvent(Game.KeyAction.SPACE);
+        if (e.getKeyChar() == 'l') game.handleEvent(Game.KeyAction.LOVE);
+        if (e.getKeyChar() == 't') game.handleEvent(Game.KeyAction.TAUNT);
         this.roomDisplay.setText(game.getCurrentRoom().toString());
     }
 
@@ -194,6 +201,13 @@ public class GUI extends javax.swing.JFrame implements KeyListener {
         if (evt.getKeyCode() == evt.VK_DOWN) game.handleEvent(Game.KeyAction.DOWN);
         if (evt.getKeyCode() == evt.VK_RIGHT) game.handleEvent(Game.KeyAction.RIGHT);
         if (evt.getKeyCode() == evt.VK_UP) game.handleEvent(Game.KeyAction.LEFT);
+        if (evt.getKeyChar() == 'a') game.handleEvent(Game.KeyAction.LEFT);
+        if (evt.getKeyChar() == 's') game.handleEvent(Game.KeyAction.DOWN);
+        if (evt.getKeyChar() == 'w') game.handleEvent(Game.KeyAction.UP);
+        if (evt.getKeyChar() == 'd') game.handleEvent(Game.KeyAction.RIGHT);
+        if (evt.getKeyChar() == ' ') game.handleEvent(Game.KeyAction.SPACE);
+        if (evt.getKeyChar() == 'l') game.handleEvent(Game.KeyAction.LOVE);
+        if (evt.getKeyChar() == 't') game.handleEvent(Game.KeyAction.TAUNT);
         this.roomDisplay.setText(game.getCurrentRoom().toString());
     }//GEN-LAST:event_formKeyTyped
     
